@@ -33,4 +33,4 @@ def decode(message):
     if message == '':
         return ''
     else:
-        return ' '.join(''.join(MORSE_CODE[letter] for letter in word.split(' ')) for word in message.strip().split('   '))
+        return ' '.join(''.join(MORSE_CODE[letter] for letter in word.split(' ')) for word in message.strip().split(' / '))
